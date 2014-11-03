@@ -1,0 +1,7 @@
+grailsw*
+.classpath
+.idea
+*.iml
+target
+wrapper
+web-app/WEB-INF/tld
