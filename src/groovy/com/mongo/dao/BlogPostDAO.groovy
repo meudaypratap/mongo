@@ -76,7 +76,7 @@ public class BlogPostDAO {
     public void addPostComment(final String name, final String email, final String body,
                                final String permalink) {
 
-        Util.getBlogDB().posts.update(["permalink": permalink], [$push: [comments: [name: name, email: email, body: body]]])
+        Util.getBlogDB().posts.update(["permalink": permalink], [$push: [comments: [author: name, email: email, body: body]]])
 
     }
 
