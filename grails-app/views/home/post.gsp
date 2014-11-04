@@ -23,8 +23,7 @@ ${post["body"]}
     ${post["tags"].join(", ")}
 </g:if>
 
-<p>
-    Comments:
+<p>Comments:</p>
 <ul>
 
     <g:if test="${post["comments"]}">

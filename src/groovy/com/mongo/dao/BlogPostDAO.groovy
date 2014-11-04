@@ -64,7 +64,8 @@ public class BlogPostDAO {
         permalink = permalink.toLowerCase();
 
 
-        println "Save---" + Util.blogDB.posts.insert([author: username, body: body, permalink: permalink, tags: tags, comments: [], date: new Date()])
+        println "Save---" + Util.blogDB.posts.insert([title: title, author: username, body: body, permalink: permalink, tags: tags, comments: [],
+                                                      date : new Date()])
         println "Count -: ${Util.blogDB.posts.count()}"
         return permalink;
     }
