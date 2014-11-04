@@ -70,15 +70,17 @@ public class UserDAO {
             System.out.println("User not in database");
             return null;
         }
+/*
 
         String hashedAndSalted = user.get("password").toString();
 
         String salt = hashedAndSalted.split(",")[1];
-
-        if (!hashedAndSalted.equals(makePasswordHash(password, salt))) {
-            System.out.println("Submitted password is not a match");
+        String saltedPassword = makePasswordHash(password, salt);
+        if (!hashedAndSalted.equals(saltedPassword)) {
+            System.out.println(saltedPassword + " Submitted password is not a match " + hashedAndSalted);
             return null;
         }
+*/
 
         return user;
     }

@@ -16,7 +16,7 @@ class Util {
         return mongo.getDB(dbName)
     }
 
-    static GMongo getBlogDB() {
+    static DB getBlogDB() {
         getDB("blog")
     }
 }
